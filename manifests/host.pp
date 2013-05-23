@@ -39,7 +39,7 @@ class xen::host {
   }
 
   # enable packet forwarding
-  sysctl::value { "net.ipv4.ip_forward":
+  sysctl { "net.ipv4.ip_forward":
     value => "1",
   }
 
